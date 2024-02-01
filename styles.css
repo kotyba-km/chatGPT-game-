@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  #game-container {
+    margin: 100px auto;
+    padding: 20px;
+    width: 400px;
+    border: 2px solid #000;
+    border-radius: 10px;
+  }
+  
+  #level-container {
+    margin-bottom: 20px;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin: 5px;
+  }
+  
+  #attack-btn:hover {
+    animation: shake 0.5s;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  #player.shake {
+    animation: shakePlayer 0.5s;
+  }
+  
+  @keyframes shakePlayer {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  #enemy.shake {
+    animation: shakeEnemy 0.5s;
+  }
+  .potion {
+    width: 40px;
+    height: 40px;
+    color: red; /* Change color to red */
+    position: relative;
+  }
+  
+  @keyframes potionAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  .potion-consume {
+    animation: potionAnimation 1s ease-in-out;
+  }
+  
+  
+  @keyframes shakeEnemy {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  @keyframes potionAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
